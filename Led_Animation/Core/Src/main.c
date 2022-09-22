@@ -148,6 +148,21 @@ void LED_7SEG_MODE(int a, int b, int c, int d, int e, int f, int g){
 	  HAL_GPIO_WritePin(LED_YELLOW_D11_GPIO_Port, LED_YELLOW_D11_Pin, yellow);
 	  HAL_GPIO_WritePin(LED_GREEN_D12_GPIO_Port, LED_GREEN_D12_Pin, green);
   }
+
+  void clearAllCLock(){
+	  HAL_GPIO_WritePin(LED_RED_D1_GPIO_Port, LED_RED_D1_Pin, 1);
+	  HAL_GPIO_WritePin(LED_YELLOW_D2_GPIO_Port, LED_YELLOW_D2_Pin, 1);
+	  HAL_GPIO_WritePin(LED_GREEN_D3_GPIO_Port, LED_GREEN_D3_Pin, 1);
+	  HAL_GPIO_WritePin(LED_RED_D4_GPIO_Port, LED_RED_D4_Pin, 1);
+	  HAL_GPIO_WritePin(LED_YELLOW_D5_GPIO_Port, LED_YELLOW_D5_Pin, 1);
+	  HAL_GPIO_WritePin(LED_GREEN_D6_GPIO_Port, LED_GREEN_D6_Pin, 1);
+	  HAL_GPIO_WritePin(LED_RED_D7_GPIO_Port, LED_RED_D7_Pin, 1);
+	  HAL_GPIO_WritePin(LED_YELLOW_D8_GPIO_Port, LED_YELLOW_D8_Pin, 1);
+	  HAL_GPIO_WritePin(LED_GREEN_D9_GPIO_Port, LED_GREEN_D9_Pin, 1);
+	  HAL_GPIO_WritePin(LED_RED_D10_GPIO_Port, LED_RED_D10_Pin, 1);
+	  HAL_GPIO_WritePin(LED_YELLOW_D11_GPIO_Port, LED_YELLOW_D11_Pin, 1);
+	  HAL_GPIO_WritePin(LED_GREEN_D12_GPIO_Port, LED_GREEN_D12_Pin, 1);
+  }
   int state = 0;
   int count = 1;
   int counter = 0;
@@ -158,6 +173,8 @@ void LED_7SEG_MODE(int a, int b, int c, int d, int e, int f, int g){
 	  LED_D1_to_D12(1, 0 , 1);
 	  HAL_Delay(1000);
 	  LED_D1_to_D12(1, 1, 0);
+	  HAL_Delay(1000);
+	  clearAllCLock();
 	  HAL_Delay(1000);
     /* USER CODE END WHILE */
 
