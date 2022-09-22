@@ -1,0 +1,819 @@
+08:35:23 **** Clean-only build of configuration Debug for project Led_Animation ****
+make -j8 clean 
+rm -rf  Led_Animation.hex  default.size.stdout  Led_Animation.list  Led_Animation.elf  ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o  ./Core/Startup/startup_stm32f103c6ux.o  ./Core/Src/main.o ./Core/Src/stm32f1xx_hal_msp.o ./Core/Src/stm32f1xx_it.o ./Core/Src/syscalls.o ./Core/Src/sysmem.o ./Core/Src/system_stm32f1xx.o  ./Core/Startup/startup_stm32f103c6ux.d  ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d  ./Core/Src/main.d ./Core/Src/stm32f1xx_hal_msp.d ./Core/Src/stm32f1xx_it.d ./Core/Src/syscalls.d ./Core/Src/sysmem.d ./Core/Src/system_stm32f1xx.d  Led_Animation.bin  Led_Animation.elf
+ 
+08:35:23 **** Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f103c6ux.d" -MT"Core/Startup/startup_stm32f103c6ux.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Startup/startup_stm32f103c6ux.o" "../Core/Startup/startup_stm32f103c6ux.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:99:5: warning: implicit declaration of function 'display7SEG' [-Wimplicit-function-declaration]
+   99 |     display7SEG(counter++);
+      |     ^~~~~~~~~~~
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+d:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `main':
+D:/vxl-vdk/lab1/Led_Animation/Debug/../Core/Src/main.c:99: undefined reference to `display7SEG'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:68: Led_Animation.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+08:36:11 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:4: warning: implicit declaration of function 'display7SEG' [-Wimplicit-function-declaration]
+  100 |    display7SEG(counter++);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+d:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `main':
+D:/vxl-vdk/lab1/Led_Animation/Debug/../Core/Src/main.c:100: undefined reference to `display7SEG'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:68: Led_Animation.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+08:36:55 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4588	     20	   1572	   6180	   1824	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
+08:49:27 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+../Core/Src/main.c: In function 'display7SEG':
+../Core/Src/main.c:101:49: error: 'LED_7SEG_R_Pin' undeclared (first use in this function); did you mean 'LED_7SEG_B_Pin'?
+  101 |      HAL_GPIO_WritePin ( LED_7SEG_E_GPIO_Port , LED_7SEG_R_Pin, GPIO_PIN_SET );
+      |                                                 ^~~~~~~~~~~~~~
+      |                                                 LED_7SEG_B_Pin
+../Core/Src/main.c:101:49: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+08:49:59 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:7: warning: unused variable 'counter' [-Wunused-variable]
+  105 |   int counter = 0;
+      |       ^~~~~~~
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4628	     20	   1572	   6220	   184c	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.list
+ 
+ 
+ 
+08:51:09 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:7: warning: unused variable 'counter' [-Wunused-variable]
+  105 |   int counter = 0;
+      |       ^~~~~~~
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4628	     20	   1572	   6220	   184c	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
+08:52:46 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:7: warning: unused variable 'counter' [-Wunused-variable]
+  106 |   int counter = 0;
+      |       ^~~~~~~
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4576	     20	   1572	   6168	   1818	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
+08:52:55 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:7: warning: unused variable 'counter' [-Wunused-variable]
+  106 |   int counter = 0;
+      |       ^~~~~~~
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4576	     20	   1572	   6168	   1818	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
+08:53:43 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:7: warning: unused variable 'counter' [-Wunused-variable]
+  104 |   int counter = 0;
+      |       ^~~~~~~
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4604	     20	   1572	   6196	   1834	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
+08:54:19 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:7: warning: unused variable 'counter' [-Wunused-variable]
+  104 |   int counter = 0;
+      |       ^~~~~~~
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4604	     20	   1572	   6196	   1834	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
+09:02:07 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:94:15: warning: unused variable 'a' [-Wunused-variable]
+   94 |   const char *a[2] = {};
+      |               ^
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4640	     20	   1572	   6232	   1858	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
+09:05:42 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:136:7: error: 'counter' undeclared (first use in this function)
+  136 |    if(counter >= 10){
+      |       ^~~~~~~
+../Core/Src/main.c:136:7: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:94:15: warning: unused variable 'a' [-Wunused-variable]
+   94 |   const char *a[2] = {};
+      |               ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+09:05:53 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:135:7: error: 'counter' undeclared (first use in this function)
+  135 |    if(counter >= 10){
+      |       ^~~~~~~
+../Core/Src/main.c:135:7: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+09:06:10 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4920	     20	   1572	   6512	   1970	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
+09:07:20 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4940	     20	   1572	   6532	   1984	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
+09:07:57 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4940	     20	   1572	   6532	   1984	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
+09:08:27 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4940	     20	   1572	   6532	   1984	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
+09:09:42 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:138:7: warning: unused variable 'counter' [-Wunused-variable]
+  138 |   int counter = 0;
+      |       ^~~~~~~
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4844	     20	   1572	   6436	   1924	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
+09:10:09 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4940	     20	   1572	   6532	   1984	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
+09:11:31 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:145:16: error: expected ';' before '}' token
+  145 |    LED_7SEG_8()
+      |                ^
+      |                ;
+......
+  152 |   }
+      |   ~             
+../Core/Src/main.c:141:7: warning: unused variable 'counter' [-Wunused-variable]
+  141 |   int counter = 0;
+      |       ^~~~~~~
+At top level:
+../Core/Src/main.c:97:9: warning: 'display7SEG' defined but not used [-Wunused-function]
+   97 |   void  display7SEG(int num){
+      |         ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+09:11:37 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:141:7: warning: unused variable 'counter' [-Wunused-variable]
+  141 |   int counter = 0;
+      |       ^~~~~~~
+At top level:
+../Core/Src/main.c:97:9: warning: 'display7SEG' defined but not used [-Wunused-function]
+   97 |   void  display7SEG(int num){
+      |         ^~~~~~~~~~~
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4552	     20	   1572	   6144	   1800	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+ 
+Finished building: Led_Animation.list
+ 
+ 
+09:12:22 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:148:7: warning: unused variable 'counter' [-Wunused-variable]
+  148 |   int counter = 0;
+      |       ^~~~~~~
+At top level:
+../Core/Src/main.c:97:9: warning: 'display7SEG' defined but not used [-Wunused-function]
+   97 |   void  display7SEG(int num){
+      |         ^~~~~~~~~~~
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4552	     20	   1572	   6144	   1800	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.list
+ 
+ 
+ 
+09:13:40 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4960	     20	   1572	   6552	   1998	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.list
+ 
+ 
+ 
+09:19:11 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:94:20: error: unknown type name 'bool'
+   94 | void LED_7SEG_MODE(bool a, bool b, bool c, bool e, bool f, bool g){
+      |                    ^~~~
+../Core/Src/main.c:94:28: error: unknown type name 'bool'
+   94 | void LED_7SEG_MODE(bool a, bool b, bool c, bool e, bool f, bool g){
+      |                            ^~~~
+../Core/Src/main.c:94:36: error: unknown type name 'bool'
+   94 | void LED_7SEG_MODE(bool a, bool b, bool c, bool e, bool f, bool g){
+      |                                    ^~~~
+../Core/Src/main.c:94:44: error: unknown type name 'bool'
+   94 | void LED_7SEG_MODE(bool a, bool b, bool c, bool e, bool f, bool g){
+      |                                            ^~~~
+../Core/Src/main.c:94:52: error: unknown type name 'bool'
+   94 | void LED_7SEG_MODE(bool a, bool b, bool c, bool e, bool f, bool g){
+      |                                                    ^~~~
+../Core/Src/main.c:94:60: error: unknown type name 'bool'
+   94 | void LED_7SEG_MODE(bool a, bool b, bool c, bool e, bool f, bool g){
+      |                                                            ^~~~
+../Core/Src/main.c: In function 'display7SEG':
+../Core/Src/main.c:106:6: warning: implicit declaration of function 'LED_7SEG_MODE' [-Wimplicit-function-declaration]
+  106 |      LED_7SEG_MODE(0,0,0,0,0,0,1);
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:147:7: warning: unused variable 'counter' [-Wunused-variable]
+  147 |   int counter = 0;
+      |       ^~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+09:19:48 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'LED_7SEG_MODE':
+../Core/Src/main.c:98:61: error: 'd' undeclared (first use in this function)
+   98 |  HAL_GPIO_WritePin ( LED_7SEG_D_GPIO_Port , LED_7SEG_D_Pin, d );
+      |                                                             ^
+../Core/Src/main.c:98:61: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'display7SEG':
+../Core/Src/main.c:106:6: error: too many arguments to function 'LED_7SEG_MODE'
+  106 |      LED_7SEG_MODE(0,0,0,0,0,0,1);
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:94:6: note: declared here
+   94 | void LED_7SEG_MODE(int a, int b, int c, int e, int f, int g){
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:147:7: warning: unused variable 'counter' [-Wunused-variable]
+  147 |   int counter = 0;
+      |       ^~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+09:20:08 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:147:7: warning: unused variable 'counter' [-Wunused-variable]
+  147 |   int counter = 0;
+      |       ^~~~~~~
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4988	     20	   1572	   6580	   19b4	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
+09:21:26 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   5068	     20	   1572	   6660	   1a04	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
+09:22:46 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   5072	     20	   1572	   6664	   1a08	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
+09:24:24 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   5072	     20	   1572	   6664	   1a08	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
+09:25:09 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   5072	     20	   1572	   6664	   1a08	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
+09:27:35 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   5088	     20	   1572	   6680	   1a18	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
+09:28:11 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   5116	     20	   1572	   6708	   1a34	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
+09:28:38 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-size   Led_Animation.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5116	     20	   1572	   6708	   1a34	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+09:28:49 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   5116	     20	   1572	   6708	   1a34	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
+09:29:08 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   5092	     20	   1572	   6684	   1a1c	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.list
+ 
+ 
+ 
+09:29:27 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-size   Led_Animation.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5092	     20	   1572	   6684	   1a1c	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+09:30:07 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   5116	     20	   1572	   6708	   1a34	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+ 
+Finished building: Led_Animation.list
+ 
+ 
+09:30:14 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   5116	     20	   1572	   6708	   1a34	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+ 
+Finished building: Led_Animation.list
+ 
+ 
+09:30:30 **** Incremental Build of configuration Debug for project Led_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Led_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\vxl-vdk\lab1\Led_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Animation.elf
+ 
+arm-none-eabi-size   Led_Animation.elf 
+arm-none-eabi-objdump -h -S  Led_Animation.elf  > "Led_Animation.list"
+arm-none-eabi-objcopy  -O ihex  Led_Animation.elf  "Led_Animation.hex"
+arm-none-eabi-objcopy  -O binary  Led_Animation.elf  "Led_Animation.bin"
+   text	   data	    bss	    dec	    hex	filename
+   5116	     20	   1572	   6708	   1a34	Led_Animation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Animation.hex
+Finished building: Led_Animation.bin
+Finished building: Led_Animation.list
+ 
+ 
+ 
