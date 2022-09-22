@@ -163,6 +163,36 @@ void LED_7SEG_MODE(int a, int b, int c, int d, int e, int f, int g){
 	  HAL_GPIO_WritePin(LED_YELLOW_D11_GPIO_Port, LED_YELLOW_D11_Pin, 1);
 	  HAL_GPIO_WritePin(LED_GREEN_D12_GPIO_Port, LED_GREEN_D12_Pin, 1);
   }
+  void setNumberOnClock(int num){
+	  switch(num){
+	  	  case 0:
+	  		HAL_GPIO_WritePin(LED_RED_D1_GPIO_Port, LED_RED_D1_Pin, 0);
+	  	  case 1:
+			  HAL_GPIO_WritePin(LED_YELLOW_D2_GPIO_Port, LED_YELLOW_D2_Pin, 0);
+	  	  case 2:
+			  HAL_GPIO_WritePin(LED_GREEN_D3_GPIO_Port, LED_GREEN_D3_Pin, 0);
+	  	  case 3:
+			  HAL_GPIO_WritePin(LED_RED_D4_GPIO_Port, LED_RED_D4_Pin, 0);
+	  	  case 4:
+			  HAL_GPIO_WritePin(LED_YELLOW_D5_GPIO_Port, LED_YELLOW_D5_Pin, 0);
+	  	  case 5:
+			  HAL_GPIO_WritePin(LED_GREEN_D6_GPIO_Port, LED_GREEN_D6_Pin, 0);
+	  	  case 6:
+			  HAL_GPIO_WritePin(LED_RED_D7_GPIO_Port, LED_RED_D7_Pin, 0);
+	  	  case 7:
+			  HAL_GPIO_WritePin(LED_YELLOW_D8_GPIO_Port, LED_YELLOW_D8_Pin, 0);
+	  	  case 8:
+			  HAL_GPIO_WritePin(LED_GREEN_D9_GPIO_Port, LED_GREEN_D9_Pin, 0);
+	  	  case 9:
+			  HAL_GPIO_WritePin(LED_RED_D10_GPIO_Port, LED_RED_D10_Pin, 0);
+	  	  case 10:
+			  HAL_GPIO_WritePin(LED_YELLOW_D11_GPIO_Port, LED_YELLOW_D11_Pin, 0);
+	  	  case 11:
+			  HAL_GPIO_WritePin(LED_GREEN_D12_GPIO_Port, LED_GREEN_D12_Pin, 0);
+	  }
+
+
+  }
   int state = 0;
   int count = 1;
   int counter = 0;
