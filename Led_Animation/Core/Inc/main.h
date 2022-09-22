@@ -58,6 +58,12 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define LED_RED_D1_Pin GPIO_PIN_1
+#define LED_RED_D1_GPIO_Port GPIOA
+#define LED_YELLOW_D2_Pin GPIO_PIN_2
+#define LED_YELLOW_D2_GPIO_Port GPIOA
+#define LED_GREEN_D3_Pin GPIO_PIN_3
+#define LED_GREEN_D3_GPIO_Port GPIOA
 #define LED_RED_Pin GPIO_PIN_5
 #define LED_RED_GPIO_Port GPIOA
 #define LED_YELLOW_Pin GPIO_PIN_6
